@@ -46,3 +46,11 @@ const quotes = [
     chapter: "Proverbs 10:12",
   },
 ];
+
+const quote = document.querySelector("#quote span:first-Child");
+const chapter = document.querySelector("#quote span:last-Child");
+
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+chapter.innerText = todaysQuote.chapter;
